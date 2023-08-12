@@ -4,16 +4,25 @@ import "../index.css";
 import { Icon, divIcon, point } from "leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 import { useState } from "react";
+import NGOModal from "../components/NGOModal";
 
 const Map = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const greenOptions = { color: 'green', fillColor: 'green' }
-  const yellowOptions = { color: 'yellow', fillColor: 'yellow' }
   const fillRedOptions = { fillColor: 'red' }
+  const fillYellowOptions = { fillColor: 'yellow' }
   const center = [21, 78]
   const [markers, setMarkers] = useState([
     {
       geocode: [21, 78],
       popUp: "India"
+    }
+  ]);
+  const [affectedAreas, setAffectedAreas] = useState([
+    {
+      geocode: [21, 78],
+      level: "yellow"
     }
   ]);
 
@@ -38,6 +47,7 @@ const Map = () => {
           geocode: [e.latlng.lat, e.latlng.lng],
           popUp: "Test"
         }])
+        setShowModal(true);
         // alert('Coordinates are: ' + e.latlng)
       },
     });
@@ -45,51 +55,47 @@ const Map = () => {
   };
 
   return (
-    <MapContainer
-      center={[21, 78]}
-      zoom={13}
-    >
-      <LocationFinderDummy />
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      <LayerGroup>
-        <Circle center={center} pathOptions={fillRedOptions} radius={2500} />
-        <Circle
-          center={center}
-          pathOptions={fillRedOptions}
-          radius={100}
-          stroke={false}
+    showModal
+      ? <NGOModal setShowModal={setShowModal} />
+      : <MapContainer
+        center={[28.6139, 77.2090]}
+        zoom={10}
+      >
+        <LocationFinderDummy />
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <LayerGroup>
-          <Circle
-            center={[51.51, -0.08]}
-            pathOptions={greenOptions}
-            radius={100}
-          />
+          <Circle center={center} pathOptions={fillRedOptions} radius={2500} />
         </LayerGroup>
-      </LayerGroup>
+        {
+          markers.map((marker, index) => (
+            <LayerGroup key={index}>
+              <Circle center={marker.geocode} pathOptions={fillYellowOptions} fillColor="yellow" radius={2500} />
+            </LayerGroup>
+          ))
+        }
 
-      {/* map marker */}
-      <MarkerClusterGroup
-        chunkedLoading
-        iconCreateFunction={createCustomClusterIcon}
-      >
-        {markers.map((marker, index) => (
-          <Marker
-            key={index}
-            position={marker.geocode}
-            icon={customIcon}
-          >
-            <Popup>
-              <h2>{marker.popUp}</h2>
-            </Popup>
-          </Marker>
-        ))}
-      </MarkerClusterGroup>
 
-    </MapContainer>
+        {/* map marker */}
+        <MarkerClusterGroup
+          chunkedLoading
+          iconCreateFunction={createCustomClusterIcon}
+        >
+          {markers.map((marker, index) => (
+            <Marker
+              key={index}
+              position={marker.geocode}
+              icon={customIcon}
+            >
+              <Popup>
+                <h2>{marker.popUp}</h2>
+              </Popup>
+            </Marker>
+          ))}
+        </MarkerClusterGroup>
+      </MapContainer>
   );
 };
 
