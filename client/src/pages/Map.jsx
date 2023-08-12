@@ -44,7 +44,7 @@ const Map = () => {
   }
 
   const center = [21, 78]
- 
+
   const customIcon = new Icon({
     iconUrl: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
     iconSize: [38, 38]
@@ -90,8 +90,10 @@ const Map = () => {
       : showFloodModal
         ? <FloodReportModal setShowModal={setShowFloodModal} setSubmitted={setFloodSubmitted} handleChange={handleChange} clear={clearCurrent} current={current} />
         : <>
-          <button className="bg-blue-500 m-10 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => setShowHelpModal(true)}>Register Help Centre</button>
-          <button className="bg-blue-500 m-10 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => setShowFloodModal(true)}>Report Flood Area</button>
+          <div className="bg-[#00613D] pl-5 pb-5">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => setShowHelpModal(true)}>Register Help Centre</button>
+            <button className="bg-blue-500 mx-10 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => setShowFloodModal(true)}>Report Flood Area</button>
+          </div>
           <MapContainer
             center={[28.6139, 77.2090]}
             zoom={10}

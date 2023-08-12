@@ -12,7 +12,7 @@ const Header = () => {
               <NavLink to="/" className="block py-2 pl-3 pr-4 text-white rounded" aria-current="page">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/map" className="block py-2 pl-3 pr-4 text-white rounded">Map</NavLink>
+              <NavLink to="/maps" className="block py-2 pl-3 pr-4 text-white rounded">Map</NavLink>
             </li>
             <li>
               <NavLink to="#" className="block py-2 pl-3 pr-4 text-white rounded">Blogs</NavLink>
