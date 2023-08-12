@@ -3,17 +3,19 @@ import "leaflet/dist/leaflet.css";
 import "../index.css";
 import { Icon, divIcon, point } from "leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
+import { useState } from "react";
 
 const Map = () => {
   const greenOptions = { color: 'green', fillColor: 'green' }
+  const yellowOptions = { color: 'yellow', fillColor: 'yellow' }
   const fillRedOptions = { fillColor: 'red' }
-  const center = [21,78]
-  const markers = [
+  const center = [21, 78]
+  const [markers, setMarkers] = useState([
     {
-      geocode: [21,78],
+      geocode: [21, 78],
       popUp: "India"
     }
-  ];
+  ]);
 
   const customIcon = new Icon({
     iconUrl: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
@@ -29,41 +31,45 @@ const Map = () => {
   };
 
   const LocationFinderDummy = () => {
-    const map = useMapEvents({
-        click(e) {
-            console.log(e.latlng);
-            alert('Coordinates are: ' + e.latlng)
-        },
+    useMapEvents({
+      click(e) {
+        // console.log(e.latlng.lat);
+        setMarkers(prevMarkers => [...prevMarkers, {
+          geocode: [e.latlng.lat, e.latlng.lng],
+          popUp: "Test"
+        }])
+        // alert('Coordinates are: ' + e.latlng)
+      },
     });
     return null;
   };
 
   return (
     <MapContainer
-      center={[21,78]}
+      center={[21, 78]}
       zoom={13}
     >
-      <LocationFinderDummy/>
+      <LocationFinderDummy />
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <LayerGroup>
-      <Circle center={center} pathOptions={fillRedOptions} radius={2500} />
-      <Circle
-        center={center}
-        pathOptions={fillRedOptions}
-        radius={100}
-        stroke={false}
-      />
-      <LayerGroup>
+        <Circle center={center} pathOptions={fillRedOptions} radius={2500} />
         <Circle
-          center={[51.51, -0.08]}
-          pathOptions={greenOptions}
+          center={center}
+          pathOptions={fillRedOptions}
           radius={100}
+          stroke={false}
         />
+        <LayerGroup>
+          <Circle
+            center={[51.51, -0.08]}
+            pathOptions={greenOptions}
+            radius={100}
+          />
+        </LayerGroup>
       </LayerGroup>
-    </LayerGroup>
 
       {/* map marker */}
       <MarkerClusterGroup
@@ -82,7 +88,7 @@ const Map = () => {
           </Marker>
         ))}
       </MarkerClusterGroup>
-      
+
     </MapContainer>
   );
 };
