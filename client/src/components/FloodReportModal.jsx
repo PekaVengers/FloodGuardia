@@ -1,4 +1,4 @@
-export default function NGOModal({ setShowModal, setSubmitted, current, handleChange, clear }) {
+export default function FloodReportModal({ setShowModal, setSubmitted, current, handleChange, clear }) {
   return (
     <>
       <div
@@ -10,7 +10,7 @@ export default function NGOModal({ setShowModal, setSubmitted, current, handleCh
             {/*header*/}
             <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
               <h3 className="text-3xl font-semibold">
-                Report Help Centre
+                Report Flood Area
               </h3>
               <button
                 className="p-1 ml-auto bg-black border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -29,28 +29,23 @@ export default function NGOModal({ setShowModal, setSubmitted, current, handleCh
               <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                 <div className="mb-4">
                   <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
-                    Organization Name
+                    Your Name
                   </label>
-                  <input value={current.val1} onChange={handleChange} name="val1" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Name of Organization" />
+                  <input value={current.val1} onChange={handleChange} name="val1" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Name" />
                 </div>
                 <div className="mb-6">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="centre-type">
-                    Type of Service
-                  </label>
-                  <input value={current.val2} onChange={handleChange} name="val2" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Service Type eg. HealthCare centre" />
-                
-                  {/* <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="level">
+                  <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="level">
                     Danger Level
                   </label>
                   <div className="inline-block relative w-64">
-                    <select id="level" className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                    <select name="val2" value={current.val2} onChange={handleChange}  id="level" className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                       <option>Medium</option>
                       <option>High</option>
                     </select>
                     <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                       <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
                     </div>
-                  </div> */}
+                  </div>
 
                 </div>
 
