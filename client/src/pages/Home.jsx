@@ -62,7 +62,7 @@ const avatars = [
 export default function Home() {
   return (
     <>
-      <div className='grid md:grid-cols-2 bg-[#00613D]'>
+      <div className='grid md:grid-cols-2 bg-[#00613D] p-10'>
         <div className='mt-56'>
           <h1 className='text-[90px] text-[#FFA765] font-extrabold'>FloodGuardia</h1>
           <p className='text-[25px] font-bold text-white'>Guarding Communities, Defending Against Floods</p>
