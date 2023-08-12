@@ -69,10 +69,10 @@ export default function Home() {
           <button className='bg-[#00A669] p-4 rounded-lg font-bold text-white mt-5'>Become a Volunteer</button>
         </div>
         <div className='grid grid-cols-2'>
-          <img src={img1} alt="" />
-          <img src={img2} alt="" />
-          <img src={img3} alt="" />
-          <img src={img4} alt="" />
+          <img className='p-4' src={img1} alt="" />
+          <img className='p-4' src={img2} alt="" />
+          <img className='p-4' src={img3} alt="" />
+          <img className='p-4' src={img4} alt="" />
         </div>
       </div>
       <div>
@@ -161,9 +161,14 @@ export default function Home() {
         </div>
         <div>
           <button className='text-center text-lg bg-[#FFD44A] p-3 font-bold rounded-lg'>Contact Us</button>
+          <div className='p-8'>
+            <input type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Name" required/>
+            <input type="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Email" required/>
+            <textarea id="message" rows="4" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Message"></textarea>
+            <button className='text-center text-lg bg-[#000000] p-3 font-bold rounded-lg text-white'>Send</button>
+          </div>
         </div>
       </div>
-
     </>
   );
 }
