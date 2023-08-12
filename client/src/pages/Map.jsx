@@ -42,12 +42,9 @@ const Map = () => {
   function clearCurrent() {
     setCurrent({ val1: "", val2: "" });
   }
-  console.log(current);
 
   const center = [21, 78]
  
-  console.log(affectedAreas);
-
   const customIcon = new Icon({
     iconUrl: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
     iconSize: [38, 38]
@@ -64,8 +61,6 @@ const Map = () => {
   const LocationFinderDummy = () => {
     useMapEvents({
       click(e) {
-        // console.log(e.latlng.lat);
-        console.log(floodSubmitted);
         if (centreSubmitted) {
           setMarkers(prevMarkers => [...prevMarkers, {
             geocode: [e.latlng.lat, e.latlng.lng],
@@ -107,12 +102,12 @@ const Map = () => {
               url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <LayerGroup>
-              <Circle center={center} pathOptions={fillRedOptions} radius={2500} />
+              <Circle center={center} pathOptions={fillRedOptions} radius={5500} />
             </LayerGroup>
             {
               affectedAreas.map((marker, index) => (
                 <LayerGroup key={index}>
-                  <Circle center={marker.geocode} pathOptions={marker.level} fill={marker.level.fillColor} radius={2500} />
+                  <Circle center={marker.geocode} pathOptions={marker.level} fill={marker.level.fillColor} radius={5500} />
                 </LayerGroup>
               ))
             }

@@ -46,10 +46,9 @@ export default function FloodReportModal({ setShowModal, setSubmitted, current, 
                       <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
                     </div>
                   </div>
-
                 </div>
-
               </form>
+              <div className="text-red-700 font-bold font-xl text-center">Click on the location after saving!</div>
             </div>
             {/*footer*/}
             <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
