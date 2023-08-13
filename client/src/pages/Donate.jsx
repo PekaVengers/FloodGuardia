@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function Donate() {
   return (
     <div>
@@ -45,7 +47,7 @@ export default function Donate() {
           <h4 className="text-center text-3xl font-semibold">Personal Info</h4>
           <input className="border m-2 rounded md:w-1/2 w-full py-3 px-3 text-gray-700 leading-tight  focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name"/>
           <input className="border m-2 rounded md:w-1/2 w-full py-3 px-3 text-gray-700 leading-tight  focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email"/>
-          <button className='text-center text-lg bg-[#00A669] p-3 font-bold rounded-lg text-white'>Donate Now</button>
+          <button className='text-center text-lg bg-[#00A669] p-3 font-bold rounded-lg text-white'> <Link to="/"> Donate Now </Link></button>
         </div>
       </div>
     </div>
