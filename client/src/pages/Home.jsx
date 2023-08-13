@@ -20,14 +20,15 @@ const cards = [
     content: 'Explore our interactive map to discover nearby NGOs, relief centers, and evacuation routes. In times of crisis, having access to this critical information can make a difference. Our map is regularly updated, ensuring you have the most current resources at your fingertips.'
   },
   {
-    heading: 'Flood Risk Assessment',
+    heading: 'Community Empowerment',
     content: 'At the heart of our mission is the empowerment of communities. By participating in our platform, you become an essential part of a network that cares for each other. Together, we create a more resilient society, where individuals are informed, prepared, and united to face the challenges of flooding.'
   },
   {
-    heading: 'Flood Risk Assessment',
-    content: "We foster collaboration between individuals, NGOs, and relief centers. Through our platform, you'll discover opportunities to get involved, support local initiatives, and stay informed about community-driven efforts to mitigate flooding. "
+    heading: 'Collaborative Network',
+    content: "We foster collaboration between individuals, NGOs, and relief centers. Through our platform, you'll discover opportunities to get involved, support local initiatives, and stay informed about community-driven efforts to mitigate flooding."
   }
-]
+];
+
 
 const avatars = [
   {
@@ -77,14 +78,14 @@ export default function Home() {
           <button className='text-center text-lg bg-[#FFD44A] p-3 font-bold rounded-lg'>Our Services</button>
         </div>
         <div className='grid md:grid-cols-2 p-12'>
-          {
-            cards.map((card,key)=>(
-              <div className='box-content p-4 border-4 m-5 bg-[#333356] rounded-2xl text-white' key={card.heading}>
-                <h3 className='text-center font-bold text-2xl'>{card.heading}</h3>
-                <p className='text-lg mt-4'>{card.content}</p>
-              </div>
-            ))
-          }
+        {
+          cards.map((card, key) => (
+            <div key={key} className='box-content p-4 border-4 m-5 bg-[#333356] rounded-2xl text-white'>
+              <h3 className='text-center font-bold text-2xl'>{card.heading}</h3>
+              <p className='text-lg mt-4'>{card.content}</p>
+            </div>
+          ))
+        }
         </div>
       </div>
       <div className='bg-[#843700] p-8 m-10 mx-[4.5rem] rounded-2xl'>
@@ -125,20 +126,6 @@ export default function Home() {
               </div>
             ))
           }
-        </div>
-      </div> */}
-      {/* <div className='grid md:grid-cols-2'>
-        <div>
-          <img src={img9} alt="" />
-        </div>
-        <div>
-          <button className='text-center text-lg bg-[#FFD44A] p-3 font-bold rounded-lg'>Contact Us</button>
-          <div className='p-8'>
-            <input type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Name" required/>
-            <input type="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Email" required/>
-            <textarea id="message" rows="4" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Message"></textarea>
-            <button className='text-center text-lg bg-[#000000] p-3 font-bold rounded-lg text-white'>Send</button>
-          </div>
         </div>
       </div> */}
     </>

@@ -17,6 +17,18 @@ const ytLinks = [
   {
     src: "https://www.youtube.com/embed/CsPxjRobjpk",
     title: "Flood Control from Underground"
+  },
+  {
+    src: "https://www.youtube.com/embed/aygyBgOC_Dc",
+    title: "Emergency Preparedness - Flooding"
+  },
+  {
+    src: "https://www.youtube.com/embed/fbyK1z1_W4s",
+    title: "Climate change is making floods worse: here's how"
+  },
+  {
+    src: "https://www.youtube.com/embed/mNf2bvdTqV4",
+    title: "10-ways to reduce Global Warming!"
   }
 ]
 
