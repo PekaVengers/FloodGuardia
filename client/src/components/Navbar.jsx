@@ -19,13 +19,7 @@ const Header = () => {
               <NavLink to="/education" className="block py-2 pl-3 pr-4 text-white rounded">Education</NavLink>
             </li>
             <li>
-              <NavLink to="#" className="block py-2 pl-3 pr-4 text-white rounded">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="#" className="block py-2 pl-3 pr-4 text-white rounded">Team</NavLink>
-            </li>
-            <li>
-              <NavLink to="#" className="block py-2 pl-3 pr-4 text-white rounded">Contact</NavLink>
+              <NavLink to="/donate" className="block py-2 pl-3 pr-4 text-white rounded">Donate Us</NavLink>
             </li>
           </ul>
         </div>

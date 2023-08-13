@@ -91,8 +91,8 @@ const Map = () => {
         ? <FloodReportModal setShowModal={setShowFloodModal} setSubmitted={setFloodSubmitted} handleChange={handleChange} clear={clearCurrent} current={current} />
         : <>
           <div className="bg-[#00613D] pl-5 pb-5">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => setShowHelpModal(true)}>Register Help Centre</button>
-            <button className="bg-blue-500 mx-10 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => setShowFloodModal(true)}>Report Flood Area</button>
+            <button className='text-center text-lg bg-[#00A669] p-3 font-bold mt-5 text-white rounded-lg' onClick={() => setShowHelpModal(true)}>Register Help Centre</button>
+            <button className='text-center text-lg bg-[#00A669] p-3 font-bold mt-5 text-white rounded-lg ml-20' onClick={() => setShowFloodModal(true)}>Report Flood Area</button>
           </div>
           <MapContainer
             center={[28.6139, 77.2090]}
