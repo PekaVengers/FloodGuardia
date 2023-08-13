@@ -21,14 +21,14 @@ const Map = () => {
     val2: ""
   });
 
-  const [markers, setMarkers] = useState([
+  const [markers, setMarkers] = useState(JSON.parse(localStorage.getItem("markers")) || [
     {
       geocode: [21, 78],
       popUp: "India"
     }
   ]);
 
-  const [affectedAreas, setAffectedAreas] = useState([
+  const [affectedAreas, setAffectedAreas] = useState(JSON.parse(localStorage.getItem("affectedAreas")) || [
     {
       geocode: [21, 78],
       level: fillYellowOptions
@@ -62,14 +62,25 @@ const Map = () => {
     useMapEvents({
       click(e) {
         if (centreSubmitted) {
+          localStorage.setItem('markers', JSON.stringify([...markers, {
+            geocode: [e.latlng.lat, e.latlng.lng],
+            popUp: current.val2
+          }]));
+
           setMarkers(prevMarkers => [...prevMarkers, {
             geocode: [e.latlng.lat, e.latlng.lng],
             popUp: current.val2
           }]);
+          
           setCentreSubmitted(false);
           clearCurrent();
         }
         else if (floodSubmitted) {
+          localStorage.setItem('affectedAreas', JSON.stringify([...affectedAreas, {
+            geocode: [e.latlng.lat, e.latlng.lng],
+            level: current.val2 == "High" ? fillRedOptions : fillYellowOptions
+          }]));
+
           setAffectedAreas(prevAreas => [...prevAreas, {
             geocode: [e.latlng.lat, e.latlng.lng],
             level: current.val2 == "High" ? fillRedOptions : fillYellowOptions
