@@ -4,7 +4,13 @@
     <img src="https://github.com/PekaVengers/FloodGuardia/assets/91741581/936d1917-d439-45e8-bbf1-532f2f25839d" alt="Flood Guardia Logo" width="200" height="200">
 </p>
 
-FloodGuardia is a comprehensive flood monitoring and early warning system that empowers communities to mitigate the impact of floods through real-time alerts, flood risk assessment, and collaborative efforts.
+FloodGuardia stands as a comprehensive flood monitoring and early warning system, empowering communities to proactively mitigate the devastating impact of floods. Through real-time alerts, precise flood risk assessments, and fostering collaborative efforts, we're committed to building a safer and more resilient future, where individuals and communities unite to safeguard lives and property from the threats posed by these natural disasters.
+
+## Important Links
+
+1. **YouTube Video :** https://www.youtube.com/watch?v=mXb3iDnQpXw
+
+2. **Figma Design :** https://www.figma.com/file/L6mVGTdjSLr8nqMtwt9egJ/FloodGuardia?type=design&node-id=0%3A1&mode=design&t=49ORdqfAO5IQqql4-1
 
 ## How to Contribute
 
