@@ -97,7 +97,7 @@ export default function Home() {
       </div>
       <div className='bg-[#FFD44A] p-8 mt-20 m-10 mx-[4.5rem] rounded-2xl'>
         <div className='flex justify-center'>
-          <button className='text-center text-lg bg-[#FFA765] p-3 font-bold mt-5 rounded-lg'>Our Mission</button>
+          <button className='text-center text-lg bg-[#FFA765] p-3 font-bold mt-5 rounded-lg'>Make a Donation</button>
         </div>
         <p className='text-center md:p-8 font-semibold text-2xl sm:p-4'>We invite you to make a meaningful difference by donating to our cause! With your support, we're on a mission to foster global connections that drive positive change through quality giving and volunteerism. Every contribution brings us closer to creating a world where individuals can easily find and engage with impactful opportunities to give back to their communities and beyond. Your generosity enables us to bridge the gap between those eager to help and the causes that truly need it, making a lasting impact on lives worldwide. Join us in this journey of empowerment, compassion, and transformation. Together, we can build a brighter future for all, where the spirit of giving thrives and reaches every corner of the world!</p>
         <div className='flex justify-center'>
