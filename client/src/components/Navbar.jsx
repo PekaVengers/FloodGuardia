@@ -16,7 +16,7 @@ const Header = () => {
               <NavLink to="/maps" className="block py-2 pl-3 pr-4 text-white rounded">Map</NavLink>
             </li>
             <li>
-              <NavLink to="#" className="block py-2 pl-3 pr-4 text-white rounded">Blogs</NavLink>
+              <NavLink to="/education" className="block py-2 pl-3 pr-4 text-white rounded">Education</NavLink>
             </li>
             <li>
               <NavLink to="#" className="block py-2 pl-3 pr-4 text-white rounded">About</NavLink>

@@ -2,9 +2,6 @@ import img1 from '../assets/image1.png'
 import img2 from '../assets/image2.png'
 import img3 from '../assets/image3.png'
 import img4 from '../assets/image4.png'
-import img5 from '../assets/ProtectPlanet.png'
-import img6 from '../assets/Boat.png'
-import img7 from '../assets/Windmill.png'
 import avatar1 from '../assets/Avatars/1.png'
 import avatar2 from '../assets/Avatars/2.png'
 import avatar3 from '../assets/Avatars/3.png'
@@ -112,31 +109,6 @@ export default function Home() {
         </div>
         <div className='flex justify-center'>
           <button className='text-center text-lg bg-[#333356] p-3 font-bold mt-5 rounded-lg text-white'>Donate Now</button>
-        </div>
-      </div>
-      <div className='p-8'>
-        <div className='flex justify-center'>
-          <button className='text-center text-lg bg-[#FFA765] p-3 font-bold mt-5 rounded-lg'>Some Blogs</button>
-        </div>
-        <div className='grid md:grid-cols-3 p-8 m-auto'>
-          <div className='p-8'>
-            <img src={img5} alt="" />
-            <button className='text-center text-lg bg-[#FFD44A] p-3 font-bold mt-1 rounded-lg'>Environment</button><br />
-            <a className='text-2xl underline' href="https://give.cmsmasters.net/ngo/2023/07/05/10-things-we-should-know-about-international-mother-earth-day/">10 Things We should Know about...</a>
-          </div>
-          <div className='p-8'>
-            <img src={img6} alt="" />
-            <button className='text-center text-lg bg-[#FFD44A] p-3 font-bold mt-1 rounded-lg'>Environment</button><br />
-            <a className='text-2xl underline' href="https://give.cmsmasters.net/ngo/2023/07/04/africa-climate-week-how-sustainable-farming-transforms-life-in-drc/">Africa Climate Week: How Sustainable</a>
-          </div>
-          <div className='p-8'>
-            <img src={img7} alt="" />
-            <button className='text-center text-lg bg-[#FFD44A] p-3 font-bold mt-1 rounded-lg'>Environment</button><br />
-            <a className='text-2xl underline' href="https://give.cmsmasters.net/ngo/2023/07/02/why-climate-crisis-is-also-a-health-crisis/">Why Climate Crisis is also a Health Crisis</a>
-          </div>
-        </div>
-        <div className='flex justify-center'>
-          <button className='text-center text-lg bg-[#00A669] p-3 font-bold mt-5 text-white rounded-lg'>See More</button>
         </div>
       </div>
       <div className='bg-[#333356] flex flex-col items-center'>
