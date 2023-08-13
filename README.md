@@ -1,7 +1,7 @@
 # Flood Guardia
 
 <p align="center">
-    <img src="" alt="Flood Guardia Logo" width="200" height="200">
+    <img src="https://github.com/PekaVengers/FloodGuardia/assets/91741581/936d1917-d439-45e8-bbf1-532f2f25839d" alt="Flood Guardia Logo" width="200" height="200">
 </p>
 
 FloodGuardia is a comprehensive flood monitoring and early warning system that empowers communities to mitigate the impact of floods through real-time alerts, flood risk assessment, and collaborative efforts.
@@ -35,7 +35,7 @@ We welcome contributions from the open-source community to make Flood Guardia ev
 
 4. **Make Your Changes**
 
-   Now it's time to work on your contributions! Feel free to add new hackathon ideas, improve the user interface, enhance backend or frontend functionality, or fix any issues you find.
+   Now it's time to work on your contributions! 
 
 5. **Check the changed files**
 
@@ -74,14 +74,16 @@ Flood Guardia is developed by a passionate and talented team dedicated to compre
 
 ## Thanks for Visiting!
 
-We sincerely thank you for checking out Flood Guardia. Your interest and support mean a lot to us. Happy hacking, and we hope Flood Guardia helps you create amazing projects for your next hackathon!
+We wholeheartedly express our gratitude for taking the time to explore FloodGuardia. Your curiosity and support hold immense significance to us. Whether you're a fellow developer, a disaster preparedness enthusiast, or someone seeking innovative solutions, we appreciate your interest.
 
 ## Acknowledgments
 
-We would like to express our gratitude to the open-source community for their valuable contributions and support in making Flood Guardia a reality.
+We extend our heartfelt appreciation to the open-source community for their invaluable contributions and unwavering support in bringing FloodGuardia to life.
+
+Your dedication, feedback, and collaborative spirit have played a pivotal role in making FloodGuardia a comprehensive flood monitoring and early warning system. Together, we are working towards enhancing disaster preparedness and community resilience.
 
 ## License
 
 Flood Guardia is licensed under the MIT License. Feel free to use, modify, and distribute the code in compliance with the terms of the license.
 
-Thank you for your interest in Flood Guardia! We hope it enables you to collaborate efficiently and achieve great success in your freelance projects. Happy collaborating!
+Thank you for your interest in Flood Guardia! 
