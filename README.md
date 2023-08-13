@@ -10,7 +10,9 @@ FloodGuardia stands as a comprehensive flood monitoring and early warning system
 
 1. **YouTube Video :** https://www.youtube.com/watch?v=mXb3iDnQpXw
 
-2. **Figma Design :** https://www.figma.com/file/L6mVGTdjSLr8nqMtwt9egJ/FloodGuardia?type=design&node-id=0%3A1&mode=design&t=49ORdqfAO5IQqql4-1
+2. **Hosted Website :** https://flood-guardia.vercel.app/
+
+3. **Figma Design :** https://www.figma.com/file/L6mVGTdjSLr8nqMtwt9egJ/FloodGuardia?type=design&node-id=0%3A1&mode=design&t=49ORdqfAO5IQqql4-1
 
 ## How to Contribute
 
