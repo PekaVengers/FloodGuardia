@@ -1,7 +1,7 @@
 export default function Donate() {
   return (
     <div>
-      <h1 className="text-center text-6xl font-semibold p-4">Donate Now</h1>
+      <h1 className="text-center text-5xl font-semibold p-4">DONATE NOW</h1>
       <div className="flex justify-start flex-col p-7">
         <div className="flex justify-center">
           <p className="bg-[#E4E4E4] p-4 w-fit flex text-xl">
@@ -24,12 +24,12 @@ export default function Donate() {
           </p>
         </div>
         <div className="p-4 flex justify-center">
-          <input name="val1" className="border rounded md:w-1/2 w-full py-3 px-3 text-gray-700 leading-tight  focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Rs. 1000.00" value=""/>
+          <input className="border rounded md:w-1/2 w-full py-3 px-3 text-gray-700 focus:outline-none focus:shadow-outline" type="text" placeholder="Rs. 1000.00"/>
         </div>
         <div className="flex justify-center">
           <button type="submit" style={{ backgroundColor: 'green', color: 'white', borderRadius: '10px', fontSize: '20px', margin: '20px',padding:10,width:250 }}>Rs. 100.00</button>
-          <button type="submit" style={{ backgroundColor: 'green', color: 'white', borderRadius: '10px', fontSize: '20px', margin: '20px',padding:10,width:250 }}>Rs. 100.00</button>
-          <button type="submit" style={{ backgroundColor: 'green', color: 'white', borderRadius: '10px', fontSize: '20px', margin: '20px',padding:10,width:250 }}>Rs. 100.00</button>
+          <button type="submit" style={{ backgroundColor: 'green', color: 'white', borderRadius: '10px', fontSize: '20px', margin: '20px',padding:10,width:250 }}>Rs. 500.00</button>
+          <button type="submit" style={{ backgroundColor: 'green', color: 'white', borderRadius: '10px', fontSize: '20px', margin: '20px',padding:10,width:250 }}>Rs. 1000.00</button>
         </div>
         <h4 className="text-center text-3xl font-semibold p-4">Select Payment Method</h4>
         <div className="flex justify-center">
@@ -43,8 +43,9 @@ export default function Donate() {
         
         <div className="p-4 flex items-center flex-col">
           <h4 className="text-center text-3xl font-semibold">Personal Info</h4>
-          <input name="val1" className="border m-2 rounded md:w-1/2 w-full py-3 px-3 text-gray-700 leading-tight  focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name" value=""/>
-          <input name="val1" className="border m-2 rounded md:w-1/2 w-full py-3 px-3 text-gray-700 leading-tight  focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email" value=""/>
+          <input className="border m-2 rounded md:w-1/2 w-full py-3 px-3 text-gray-700 leading-tight  focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name"/>
+          <input className="border m-2 rounded md:w-1/2 w-full py-3 px-3 text-gray-700 leading-tight  focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email"/>
+          <button className='text-center text-lg bg-[#00A669] p-3 font-bold rounded-lg text-white'>Donate Now</button>
         </div>
       </div>
     </div>
