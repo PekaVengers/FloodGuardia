@@ -5,7 +5,6 @@ import img4 from '../assets/image4.png'
 import img5 from '../assets/ProtectPlanet.png'
 import img6 from '../assets/Boat.png'
 import img7 from '../assets/Windmill.png'
-import img9 from '../assets/image9.png'
 import avatar1 from '../assets/Avatars/1.png'
 import avatar2 from '../assets/Avatars/2.png'
 import avatar3 from '../assets/Avatars/3.png'
@@ -99,13 +98,13 @@ export default function Home() {
           <button className='text-center text-lg bg-[#00A669] p-3 font-bold mt-5 text-white rounded-lg'>Join as Volunteer</button>
         </div>
       </div>
-      <div className='bg-[#FFD44A] p-8'>
+      <div className='bg-[#FFD44A] p-8 mt-20'>
         <div className='flex justify-center'>
           <button className='text-center text-lg bg-[#FFA765] p-3 font-bold mt-5 rounded-lg'>Our Mission</button>
         </div>
         <p className='text-center md:p-8 font-semibold text-2xl sm:p-4'>We invite you to make a meaningful difference by donating to our cause! With your support, we're on a mission to foster global connections that drive positive change through quality giving and volunteerism. Every contribution brings us closer to creating a world where individuals can easily find and engage with impactful opportunities to give back to their communities and beyond. Your generosity enables us to bridge the gap between those eager to help and the causes that truly need it, making a lasting impact on lives worldwide. Join us in this journey of empowerment, compassion, and transformation. Together, we can build a brighter future for all, where the spirit of giving thrives and reaches every corner of the world!</p>
         <div className='flex justify-center'>
-          <p className='bg-[#E4E4E4] text-center p-5 w-fit flex text-xl'>
+          <p className='bg-[#E4E4E4] p-5 w-fit flex text-xl'>
             <svg style={{color:'#FF9A62',fontWeight:'bold',height:30,width:30}} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
             </svg><b>Notice:</b> Test mode is enabled. While in test mode no live donations are processed.
@@ -155,7 +154,7 @@ export default function Home() {
           }
         </div>
       </div>
-      <div className='grid md:grid-cols-2'>
+      {/* <div className='grid md:grid-cols-2'>
         <div>
           <img src={img9} alt="" />
         </div>
@@ -168,7 +167,7 @@ export default function Home() {
             <button className='text-center text-lg bg-[#000000] p-3 font-bold rounded-lg text-white'>Send</button>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
