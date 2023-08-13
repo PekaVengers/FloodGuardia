@@ -86,7 +86,7 @@ export default function Home() {
           }
         </div>
       </div>
-      <div className='bg-[#843700] p-8'>
+      <div className='bg-[#843700] p-8 m-10 mx-[4.5rem] rounded-2xl'>
         <div className='flex justify-center'>
           <button className='text-center text-lg bg-[#FFA765] p-3 font-bold mt-5 rounded-lg'>Our Mission</button>
         </div>
@@ -95,7 +95,7 @@ export default function Home() {
           <button className='text-center text-lg bg-[#00A669] p-3 font-bold mt-5 text-white rounded-lg'>Join as Volunteer</button>
         </div>
       </div>
-      <div className='bg-[#FFD44A] p-8 mt-20'>
+      <div className='bg-[#FFD44A] p-8 mt-20 m-10 mx-[4.5rem] rounded-2xl'>
         <div className='flex justify-center'>
           <button className='text-center text-lg bg-[#FFA765] p-3 font-bold mt-5 rounded-lg'>Our Mission</button>
         </div>
@@ -111,7 +111,7 @@ export default function Home() {
           <button className='text-center text-lg bg-[#333356] p-3 font-bold mt-5 rounded-lg text-white'>Donate Now</button>
         </div>
       </div>
-      <div className='bg-[#333356] flex flex-col items-center'>
+      {/* <div className='bg-[#333356] flex flex-col items-center'>
         <div className='flex justify-center mt-10'>
           <button className='text-center text-lg bg-[#FFD44A] p-3 font-bold rounded-lg'>Our Team</button>
         </div>
@@ -125,7 +125,7 @@ export default function Home() {
             ))
           }
         </div>
-      </div>
+      </div> */}
       {/* <div className='grid md:grid-cols-2'>
         <div>
           <img src={img9} alt="" />
